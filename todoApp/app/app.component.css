@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    
+    /* //etiketlerin hzalanmasını sağlar */
+    justify-content: center;
+    flex-direction: row; 
+    /* //yanyana hizalar */
+    border: 1px solid gray;
+    padding: 12px;
+    
+}
+.buttons{
+    button{
+        margin-right: 16px;
+        width: 19%;
+    }
+}
+.tasks{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 8px;
+    align-items: center;
+}
+.task{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid gray;
+    padding: 12px;
+}
