@@ -1,0 +1,7 @@
+<div class="container">
+    @for (category of categories; track $index) {
+        <button mat-raised-button color="primary" (click)="filterBooks(category)">{{category}}</button>
+    }
+    <button mat-raised-button color="primary" (click)="sifirla()">Tümünü Göster</button>
+    <button mat-raised-button color="primary" (click)="allDelete()">Tümünü Sil</button>
+</div>
