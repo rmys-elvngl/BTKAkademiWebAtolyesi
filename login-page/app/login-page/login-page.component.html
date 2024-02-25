@@ -1,0 +1,33 @@
+<div class="container">
+<div><img style="float: left; width: 102%;" src="/assets/login.jpg" alt="resim">
+</div>
+<div class="color" style="float: right;">
+    <h5 style="position: absolute; right: 0px;">Not a member? <a style="color: black;" href="">Register now</a></h5>
+    <form> <div style="margin-top: 20%;">
+     
+    <h1 class="center" style="font-size: 45px;">Hello Again!</h1><br>
+    <h4 class="center">Welcome back you've been missed!</h4>
+    <div class="example-container">
+        <mat-form-field class="center"> 
+          <mat-label>Enter username</mat-label>
+          <input matInput [formControl]="emailFormControl">
+        </mat-form-field>
+      <br>
+      <mat-form-field style="border-radius: 12px;"  class="center">
+        <mat-label>Enter your password</mat-label>
+        <input matInput [formControl]="emailFormControl" [type]="hide ? 'password' : 'text'">
+        <button [disabled]="isDisable()" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon style="color: black;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+      </div>
+<p style="margin-left: 85%;">Recovery Password</p>
+
+     <button class="left" style="border-radius: 21px; background-color: #f9c0a7; width: 100px;
+     height: 50px;">Sign In</button>
+      <br><br><hr style="color: #f9c0a7;">
+      <br>
+      <p class="center">Or continue with</p><br>
+     </div></form>
+</div>
+</div>

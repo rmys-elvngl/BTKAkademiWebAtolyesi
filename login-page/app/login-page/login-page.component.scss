@@ -1,0 +1,25 @@
+.example-form-field {
+    width: 200px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    background-color: #294f33
+  
+}
+
+.color{
+    color: white
+}
+
+.container > div {
+    flex: 1;
+    margin-right: 20px; /* İstenirse boşluk ekleyebilirsiniz */
+}
+.left{
+    margin-left: 44%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
