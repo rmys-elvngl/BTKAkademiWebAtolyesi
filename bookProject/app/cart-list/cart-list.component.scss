@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .field {
+    border: 1px solid wheat;
+    width: 28%;
+    padding: 12px;
+    margin: 12px;
+  
+    div {
+        margin-bottom: 8px;
+    }
+  
+  
+  }
+  
+  .name {
+    display: flex;
+    flex-direction: row;
+  
+  
+  }
+  
+  .form-name {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .form-star {
+    font-size: 12px;
+    font-style: italic;
+  }
+  
+  .book-name {
+    font-size: 20px;
+    font-weight: 700;
+  }

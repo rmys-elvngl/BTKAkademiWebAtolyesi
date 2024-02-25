@@ -1,0 +1,23 @@
+<h2 style="display: flex; justify-content: space-evenly; margin-top: 14px;">Sepet Listesi</h2>
+<div class="container">
+    @for(book of cartList;track $index){
+    <div class="field">
+        <div class="name">
+            <div class="form-name">
+                <div class="book-name">{{ book.name }}</div>
+                <div>-</div>
+                <div>{{ book.year }}</div>
+            </div>
+        </div>
+
+        <div>{{ book.author}}</div>
+        <div class="form-star">{{ book.star}}</div>
+        <!-- <button mat-raised-button color="primary" >Sepete Ekle</button> -->
+
+        <!-- <button mat-fab extended (click)="addToCart(book)">
+            <mat-icon>plus</mat-icon>
+            Sepete Ekle
+          </button> -->
+    </div>
+    }
+</div>
