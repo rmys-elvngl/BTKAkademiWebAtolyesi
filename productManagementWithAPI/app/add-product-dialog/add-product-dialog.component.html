@@ -1,0 +1,26 @@
+<h2>Ürün Ekle</h2>
+
+<div [formGroup]="productForm">
+  <mat-form-field>
+    <input matInput placeholder="Ürün Adı" formControlName="name">
+  </mat-form-field>
+  
+  <mat-form-field>
+    <input matInput placeholder="Fiyat" formControlName="price">
+  </mat-form-field>
+  
+  <mat-form-field>
+    <input matInput placeholder="Kategori" formControlName="category">
+  </mat-form-field>
+  
+  <mat-form-field>
+    <textarea matInput placeholder="Açıklama" formControlName="description"></textarea>
+  </mat-form-field>
+  
+  <mat-form-field>
+    <input matInput placeholder="Resim URL" formControlName="image">
+  </mat-form-field>
+</div>
+<button mat-raised-button color="primary" (click)="addProduct()">Ekle</button>
+<button mat-raised-button color="warn" (click)="closeDialog()">İptal</button>
+

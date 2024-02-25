@@ -1,0 +1,26 @@
+<div class="container">
+  @for (product of products; track $index) {
+  <div class="card" style="flex-basis: 30%; margin: 20px;">
+    <div style="padding: 12px;">
+      <div>
+        <mat-card-header>
+          <div>{{ product.title }}</div>
+          <div>{{ product.category }}</div>
+        </mat-card-header>
+        <img mat-card-image src="{{ product.image }}" alt="Product Image" style="height: 300px; width: 300px;">
+        <div>
+          <p>{{ product.description }}</p>
+        </div>
+        <div>
+          <button mat-button disabled>{{ product.price }} $</button>
+          <button mat-raised-button color="primary">BUY</button>
+          <button mat-raised-button color="warning" (click)="openDialog(product)">INFO</button>
+          <button mat-raised-button color="warning" (click)="deleteProduct($index)">DELETE</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  }
+</div>

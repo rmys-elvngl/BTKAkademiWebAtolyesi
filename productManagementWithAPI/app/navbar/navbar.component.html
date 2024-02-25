@@ -1,0 +1,20 @@
+<div class="navbar">
+    @for (category of categories; track $index) {
+      <button mat-raised-button color="primary"  (click)="filterByCategory(category)">{{getCategories(category)}}</button>
+    }
+    <button mat-raised-button color="primary" (click)="openAddProductDialog()">Add Products</button>
+</div>
+<h1 style="text-align: center; margin-top: 20px;">PRODUCTS</h1>
+
+<div *ngIf="filteredProducts && filteredProducts.length > 0">
+    <div *ngFor="let product of filteredProducts; let i = index">
+      <div>
+        <img [src]="product.image" alt="{{ product.title }}" style="max-width: 100px; max-height: 100px;">
+        <h3>{{ product.title }}</h3>
+        <p>{{ product.description }}</p>
+        <p>Price: {{ product.price }}</p>
+      </div>
+    </div>
+  </div>
+  
+
