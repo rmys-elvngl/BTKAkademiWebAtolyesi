@@ -1,5 +1,0 @@
-<app-navbar [categories]="categories" (categoryName)="setBooksForCategories($event)" (resetBooks)="resetBooksForCategories()" (allDeleteBooks)="deleteAllBooks()"></app-navbar>
-<button mat-raised-button color="accent" (click)="goToCart()">Sepete Git</button>
-<mat-icon [matBadge]="cartList.length"  matBadgeColor="warn">shopping_cart</mat-icon> 
-<!-- //köşeli parantez eklediğimde ts den data alabiliyor -->
-<app-book-card-list [books] = "filteredBooks" (addCart)="addToCart($event)"></app-book-card-list>
